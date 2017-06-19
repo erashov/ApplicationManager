@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { MaterialModule } from '@angular/material';
+import { SignInComponent } from './components/sign-in/sign-in.component'
 
 export const sharedConfig: NgModule = {
     bootstrap: [ AppComponent ],
@@ -15,7 +16,8 @@ export const sharedConfig: NgModule = {
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
-        HomeComponent,  
+        HomeComponent,
+        SignInComponent
     ],
     imports: [
 
@@ -24,6 +26,7 @@ export const sharedConfig: NgModule = {
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
+            { path: 'sign-in', component:SignInComponent},
             { path: '**', redirectTo: 'home' }
         ]),
             MaterialModule
