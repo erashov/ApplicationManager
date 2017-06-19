@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -18,6 +18,7 @@
     "ApplicationManagerSPA": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "http://localhost:50684",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
