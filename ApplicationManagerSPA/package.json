@@ -1,8 +1,9 @@
 {
   "name": "ApplicationManagerSPA",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "scripts": {
-    "test": "karma start ClientApp/test/karma.conf.js"
+    "test": "karma start ClientApp/test/karma.conf.js",
+    "bundle-report": "webpack-bundle-analyzer dist/stats.json"
   },
   "dependencies": {
     "@angular/animations": "4.2.3",
@@ -16,19 +17,19 @@
     "@angular/platform-browser-dynamic": "4.2.3",
     "@angular/platform-server": "4.2.3",
     "@angular/router": "4.2.3",
-    "@types/node": "8.0.0",
+    "@types/node": "^8.0.0",
     "angular2-template-loader": "0.6.2",
     "aspnet-prerendering": "^2.0.5",
     "aspnet-webpack": "^1.0.29",
     "awesome-typescript-loader": "3.1.3",
     "css": "2.2.1",
     "css-loader": "0.28.4",
-    "es5-shim": "^4.5.9",
     "es6-shim": "0.35.3",
     "event-source-polyfill": "0.0.9",
     "expose-loader": "0.7.3",
     "extract-text-webpack-plugin": "2.1.2",
     "file-loader": "0.11.2",
+    "hammerjs": "^2.0.8",
     "html-loader": "0.4.5",
     "isomorphic-fetch": "2.2.1",
     "json-loader": "0.5.4",
@@ -46,10 +47,10 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@types/chai": "3.5.2",
+    "@types/chai": "^4.0.0",
     "@types/jasmine": "2.5.52",
-    "chai": "3.5.0",
-    "jasmine-core": "2.6.3",
+    "chai": "^4.0.2",
+    "jasmine-core": "^2.6.4",
     "karma": "1.7.0",
     "karma-chai": "0.1.0",
     "karma-chrome-launcher": "2.1.1",
