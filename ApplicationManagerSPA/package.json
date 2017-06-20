@@ -11,12 +11,12 @@
     "@angular/core": "4.2.3",
     "@angular/forms": "4.2.3",
     "@angular/http": "4.2.3",
-    "@angular/material": "^2.0.0-beta.6",
+    "@angular/material": "^2.0.0-beta.7",
     "@angular/platform-browser": "4.2.3",
     "@angular/platform-browser-dynamic": "4.2.3",
     "@angular/platform-server": "4.2.3",
     "@angular/router": "4.2.3",
-    "@types/node": "7.0.31",
+    "@types/node": "8.0.0",
     "angular2-template-loader": "0.6.2",
     "aspnet-prerendering": "^2.0.5",
     "aspnet-webpack": "^1.0.29",
@@ -41,7 +41,6 @@
     "to-string-loader": "1.1.5",
     "typescript": "2.3.4",
     "url-loader": "0.5.9",
-    "webpack": "2.6.1",
     "webpack-hot-middleware": "2.18.0",
     "webpack-merge": "4.1.0",
     "zone.js": "0.8.12"
@@ -56,6 +55,7 @@
     "karma-chrome-launcher": "2.1.1",
     "karma-cli": "1.0.1",
     "karma-jasmine": "1.1.0",
-    "karma-webpack": "2.0.3"
+    "karma-webpack": "2.0.3",
+    "webpack": "^3.0.0"
   }
 }

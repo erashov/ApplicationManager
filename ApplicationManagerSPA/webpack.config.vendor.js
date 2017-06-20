@@ -29,6 +29,7 @@ module.exports = (env) => {
                 '@angular/material/prebuilt-themes/indigo-pink.css',
                 'material-design-icons/iconfont/material-icons.css',
                 'es6-shim',
+                'core-js/client/shim.min.js',
                 'es6-promise',
                 'event-source-polyfill',
                 'zone.js'
