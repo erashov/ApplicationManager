@@ -12,11 +12,10 @@ namespace ApplicationManagerSPA.Controllers
     [Route("api/Default")]
     public class DefaultController : Controller
     {
-        [HttpGet]
-        public string Get() => "hello";
+      
 
         [HttpPost]
-        public IActionResult InsertImage(ImageData imageData)
+        public IActionResult Post([FromBody]CredentialsViewModel imageData)
         {
           
             return new OkObjectResult("Account created");

@@ -2,11 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ApplicationManagerSPA.Data;
 using Microsoft.AspNetCore.Identity;
-using ApplicationManagerSPA.Models.Entities;
 using AutoMapper;
+using ApplicationManagerSPA.Models.Entities;
 using ApplicationManagerSPA.ViewModels;
 using ApplicationManagerSPA.Helpers;
 
@@ -14,7 +15,6 @@ namespace ApplicationManagerSPA.Controllers
 {
     [Produces("application/json")]
     [Route("api/Accounts")]
-    [Route("api/[controller]")]
     public class AccountsController : Controller
     {
         private readonly ApplicationDbContext _appDbContext;
@@ -28,9 +28,9 @@ namespace ApplicationManagerSPA.Controllers
             _appDbContext = appDbContext;
         }
 
-
+        // POST api/accounts
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody]RegistrationViewModel model)
+        public async Task<IActionResult> PostAsync([FromBody]RegistrationViewModel model)
         {
             if (!ModelState.IsValid)
             {
